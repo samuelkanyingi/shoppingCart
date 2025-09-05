@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.uls {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+li a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 900;
+}
+nav {
+    background-color: blueviolet;
+    padding: 15px;
+    align-items: center;
+}
+p {
+    font-size: 32px;
+}
+.card {
+    display: inline-block;
+    border: 2px solid red;
+    margin-left: 20px;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.btn {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.AddBtn, .SubBtn, .DeleteBtn  {
+    padding: 5px 15px;
+}
+.cartBtn  {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 15px;
+}
+.cart {
+    display: flex;
+    gap: 10px;
+}
+/* shop.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #222;
+  padding: 1rem;
+}
+
+nav .uls {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav .uls li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 1rem;
+  width: 260px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.btn button {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.3rem;
+}
+
+.cartBtn {
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.cartBtn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.cartBtn:hover:not(:disabled) {
+  background: #005fcc;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* cart.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #222;
+  padding: 1rem;
+}
+
+nav .uls {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav .uls li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.cart {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart p {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.AddBtn, .SubBtn, .DeleteBtn {
+  background: #eee;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.AddBtn:hover {
+  background: #4caf50;
+  color: #fff;
+}
+
+.SubBtn:hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+.DeleteBtn:hover {
+  background: #f44336;
+  color: #fff;
+}
+
+
+.total {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
